@@ -1,0 +1,86 @@
+*{
+    box-sizing: border-box;
+    margin: 0%;
+}
+
+body{
+    font-family: 'Times New Roman', Times, serif;
+    margin: 25px;
+    background-color: azure;
+}
+.title{
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.calc-container{
+    max-width: 350px;
+    width: 100%;
+    min-height: 480px;
+    height:auto;
+    color: white;
+    background-color: rgb(255, 0, 0);
+    border-radius: 40px;
+    margin: 40px auto;
+    padding: 20px;
+    border: 10px;
+}
+    .windows{
+        display:flex;
+        flex-direction: row;
+        justify-content: space-between;
+        height: 30px;
+    }
+    .result-container{
+        height: 15vh;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        border: solid rgb(109, 2, 2) 5px;
+        border-radius: 20px;
+        padding: 5px;
+        background: rgb(163, 189, 255);
+        word-wrap: break-word;
+        word-break: break-all;
+    }
+    .calcu{
+        font-size: 20px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        text-transform: capitalize;
+        color: rgb(0, 0, 0);
+    }
+    .result{
+        font-size: 35px;
+        color: rgb(0, 0, 0);
+        text-align: right;
+        margin-top: 14px;
+        margin-right: 20px;
+        text-transform: capitalize;
+    }
+    .btn-container{
+        display: grid;
+        grid-gap: 15px;
+        grid-template-columns:repeat(4, 1fr);
+        grid-template-rows: repeat(5, 1fr);
+        height: 50vh;
+    }
+    .btn{
+        align-items: center;
+        background: rgb(122, 255, 235);
+        border-radius: 40%;
+        display: flex;
+        justify-content: center;
+        cursor: pointer;
+        font-size: 30px;
+    }
+    .btn.function{
+        color: rgb(255, 9, 9);
+        background-color: #ffffff;
+    }
+    .btn.operator{
+        background-color: rgb(191, 133, 26);
+    }
+    .btn.number-0{
+        grid-column: 1 / span 2;
+        border-radius: 25px;
+        justify-content: center;
+    }
